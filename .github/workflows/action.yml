@@ -3,7 +3,8 @@ name: 'GitHub Actions Weather Bot'
 on:
   push:
   schedule:
-    - cron: '20 * * * *'
+      # 计划任务语法的五个字段，分别为分钟，小时，每月的第几天，月份，周几  
+    - cron: '0 20 * * *'
 
 jobs:
   bot:
